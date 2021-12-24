@@ -4,8 +4,10 @@ import Bands from './components/bands/Bands'
 import { getAllBands } from './services/getAllBands'
 import Filter from './components/Filter';
 import BandForm from './components/BandForm'
+import EditedForm from './components/EditedForm';
 import { saveBand } from './services/saveBand';
 import { deleteBand } from './services/deleteBand';
+
 
 function App() {
   const [bands, setBands] = useState([]) 
@@ -16,6 +18,8 @@ function App() {
   const [newSpotify, setNewSpotify] = useState('')
   //Estado para mostrar o no el formulario de añadir banda
   const [displayAdd, setDisplayAdd] = useState(false)
+  //Estado para indicar la banda que se quiere editar
+  const [editedBandId, setEditedBandId] = useState(null)
 
   useEffect(() => {
     getAllBands()
@@ -62,6 +66,35 @@ function App() {
     }
   }
 
+  function handleSubmitEdit(event) {
+    event.preventDefault()
+    if (bands.find(band => band.name === newName) !== undefined) {
+      window.alert(`${newName} ya estaba añadido en la lista`)
+    }
+    
+    else {
+      const id=Math.max(bands.map(band => band.id))
+      const bandaObj = {
+        id: id+1,
+        name: newName,
+        detail: {
+          origin: newOrigin,
+          yearsActive: newYears,
+          spotify: newSpotify
+        }
+      }
+      const listaBandas = bands
+      deleteBand(editedBandId).then(
+        ()=>saveBand(bandaObj).then(() => setBands(listaBandas.concat(bandaObj)))
+      )
+      setEditedBandId(null)
+      setNewName("")
+      setNewOrigin("")
+      setNewYears("")
+      setNewSpotify("")
+    }
+  }
+
   const handleDelete = (id) => {
     return () => {
     try{
@@ -72,29 +105,71 @@ function App() {
     }
     }
   }
+  function handleEdit(id) {
+    
+    return () => setEditedBandId(id)
+  }
 
+  const handleCancelAdd = () => {
+    setDisplayAdd(false)
+  }
 
+  const handleCancelEdit = () => {
+    setEditedBandId(null)
+  }
+
+  
   return (
     <div>
       <h1>Rock and Search</h1>
       <h2>Tus bandas clásicas de Rock and Roll</h2>
-      { !displayAdd ? (<button onClick={()=> 
-      setDisplayAdd(true)}>Añadir banda</button>) : ""}
-      {displayAdd ? (<BandForm handleChangeName={handleChangeName}
-      handleChangeOrigin={handleChangeOrigin}
-      handleChangeYears={handleChangeYears}
-      handleChangeSpotify={handleChangeSpotify}
-      handleSubmit = {handleSubmit}
-      newName = {newName}
-      newOrigin = {newOrigin}
-      newYears = {newYears}
-      newSpotify = {newSpotify}
-      setDisplayAdd={setDisplayAdd}
-      />) : "" }
+      <div>
+        { !displayAdd ? (<button onClick={()=> 
+        setDisplayAdd(true)}>Añadir banda</button>) : ""}
+        {displayAdd ? 
+        (<div>
+          <h3>Añadir nueva banda</h3>
+          <BandForm handleChangeName={handleChangeName}
+          handleChangeOrigin={handleChangeOrigin}
+          handleChangeYears={handleChangeYears}
+          handleChangeSpotify={handleChangeSpotify}
+          handleSubmit = {handleSubmit}
+          newName = {newName}
+          newOrigin = {newOrigin}
+          newYears = {newYears}
+          newSpotify = {newSpotify}
+          handleCancelAdd={handleCancelAdd}
+          />
+
+        </div>
+      ) : "" }
+      
+      {editedBandId!==null ? 
+        (
+          <div>
+            <h3>Editar banda</h3>
+            <EditedForm 
+            handleChangeName={handleChangeName}
+            handleChangeOrigin={handleChangeOrigin}
+            handleChangeYears={handleChangeYears}
+            handleChangeSpotify={handleChangeSpotify}
+            newName = {newName}
+            newOrigin = {newOrigin}
+            newYears = {newYears}
+            newSpotify = {newSpotify}
+            handleSubmitEdit = {handleSubmitEdit}
+            handleCancelEdit = {handleCancelEdit}
+            bands={bands}
+            editedBandId={editedBandId}
+            />
+          </div>) : ""}
+          
+      </div>
       <Filter newFilter={newFilter} 
       handleChangeFilter={handleChangeFilter}/>
       <h2>Bandas</h2>
-      <Bands bands={bands} newFilter={newFilter} handleDelete={handleDelete}
+      <Bands bands={bands} newFilter={newFilter} 
+      handleDelete={handleDelete} handleEdit={handleEdit}
       />    
     </div>
     

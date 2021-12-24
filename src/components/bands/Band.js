@@ -1,7 +1,10 @@
 
-const Band = ({band, handleDelete}) => {
-
-    return <li>{band.name} <button onClick={handleDelete(band.id)}>Eliminar</button></li>
+const Band = ({band, handleDelete,handleEdit}) => {
+    
+    return <li>{band.name} 
+    <button onClick={handleDelete(band.id)}>Eliminar</button>
+    <button onClick={handleEdit(band.id)}>Editar</button>
+    </li>
 
 }
 

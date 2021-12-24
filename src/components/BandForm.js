@@ -1,28 +1,33 @@
-const PersonForm = ({handleSubmit, newName, handleChangeName, 
+const BandForm = ({handleSubmit, newName, handleChangeName, 
     newOrigin, handleChangeOrigin, newYears, handleChangeYears
-    , newSpotify, handleChangeSpotify, setDisplayAdd}) => (
+    , newSpotify, handleChangeSpotify, handleCancelAdd}) => {  
+  
+    return (
     <div>
-        <h2>Añadir nueva banda: </h2>
         <form onSubmit={handleSubmit}>
             <div>
-            Nombre*: <input value={newName} onChange={handleChangeName} required/>
+            Nombre*: <input value={newName} 
+            onChange={handleChangeName} required/>
             </div>
             <div>
-            Origen: <input value={newOrigin} onChange={handleChangeOrigin}/>
+            Origen: <input value={newOrigin} 
+            onChange={handleChangeOrigin}/>
             </div>
             <div>
-            Periodo de actividad: <input value={newYears} onChange={handleChangeYears}/>
+            Periodo de actividad: <input value={newYears} 
+            onChange={handleChangeYears}/>
             </div>
             <div>
-            Enlace de canción de Spotify: <input value={newSpotify} onChange={handleChangeSpotify}/>
+            Enlace de canción de Spotify: <input value={newSpotify} 
+            onChange={handleChangeSpotify}/>
             </div>
             <div>
-            <button type="submit">add</button>
+            <button type="submit">Confirmar nueva banda</button>
             </div>
         </form>
-        <button onClick={()=> 
-        setDisplayAdd(false)}>Cancelar</button>
+        <button onClick={handleCancelAdd}>Cancelar</button>
     </div>
 )
+        }
 
-export default PersonForm
+export default BandForm

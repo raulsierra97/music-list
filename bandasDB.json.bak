@@ -4,9 +4,9 @@
       "id": 1,
       "name": "Guns N' Roses",
       "detail": {
-        "Origin": "Los Angeles, California, U.S.",
-        "Years active": "1985–present",
-        "Spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+        "origin": "Los Angeles, California, U.S.",
+        "yearsActive": "1985–present",
+        "spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
       }
     },
     {
@@ -34,42 +34,6 @@
         "Origin": "Los Angeles, California, U.S.",
         "Years active": "1985–present",
         "Spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
-      }
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11,
-      "name": "hrhrh",
-      "detail": {
-        "origin": "",
-        "yearsActive": "",
-        "spotify": ""
-      }
-    },
-    {
-      "id": 12,
-      "name": "Queen",
-      "detail": {
-        "origin": "USA",
-        "yearsActive": "1950-2000",
-        "spotify": ""
       }
     }
   ]
