@@ -1,30 +1,57 @@
 {
   "bands": [
     {
-      "id": 3,
-      "name": "U2",
+      "id": 1,
+      "name": "Guns N' Roses",
       "detail": {
         "origin": "Los Angeles, California, U.S.",
         "yearsActive": "1985–present",
-        "spotify": "https://open.spotify.com/embed/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+        "spotify": "https://open.spotify.com/embed/track/7o2CTH4ctstm8TNelqjb51?si=241ab4481f1f4744"
       }
     },
     {
+      "id": 2,
+      "name": "Bon Jovi",
+      "detail": {
+        "origin": "Nueva Jersey (Estados Unidos)",
+        "yearsActive": "1983-presente",
+        "spotify": "https://open.spotify.com/embed/track/37ZJ0p5Jm13JPevGcx4SkF?si=e7d3a17f620941c7"
+      }
+    },
+    {
+      "id": 3,
+      "name": "U2",
+      "detail": {
+        "origin": "Dublín, Irlanda",
+        "yearsActive": "1976-presente",
+        "spotify": "https://open.spotify.com/embed/track/6ADSaE87h8Y3lccZlBJdXH?si=d2b8aa4feff14d04"
+      }
+    },
+	{
       "id": 4,
-      "name": "Queen",
+      "name": "Duran Duran",
       "detail": {
-        "origin": "",
-        "yearsActive": "",
-        "spotify": ""
+        "origin": "Birmingham, Inglaterra",
+        "yearsActive": "1978-presente",
+        "spotify": "https://open.spotify.com/embed/track/0wokCRaKD0zPNhMRXAgVsr?si=6b9a1b6b5d624fa1"
       }
     },
-    {
+	{
       "id": 5,
-      "name": "Bon Jova",
+      "name": "Aerosmith",
       "detail": {
-        "origin": "",
-        "yearsActive": "",
-        "spotify": ""
+        "origin": "Boston, Estados Unidos",
+        "yearsActive": "1970–present",
+        "spotify": "https://open.spotify.com/embed/track/5MxNLUsfh7uzROypsoO5qe?si=62d23c9251e74807"
+      }
+    },
+		{
+      "id": 6,
+      "name": "The Clash",
+      "detail": {
+        "origin": "Londres, Inglaterra, Reino Unido",
+        "yearsActive": "1976-1986",
+        "spotify": "https://open.spotify.com/embed/track/39shmbIHICJ2Wxnk1fPSdz?si=da91c90f847e4b77"
       }
     }
   ]

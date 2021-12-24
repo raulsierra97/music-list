@@ -129,7 +129,7 @@ function App() {
   }
   
   return (
-    <div>
+    <div className='App'>
       <h1>Rock and Search</h1>
       <h2>Tus bandas clásicas de Rock and Roll</h2>
       <div>

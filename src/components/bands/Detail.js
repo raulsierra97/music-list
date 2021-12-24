@@ -19,8 +19,10 @@ const Detail = ({detailBandId, handleCancelDetail, bands}) => {
         {detailBand.detail.origin? (<li>Origen: {detailBand.detail.origin}</li>) : ""}
         {detailBand.detail.yearsActive? (<li>Periodo de actividad: {detailBand.detail.yearsActive}</li>) : ""}
     </ul>
-    {detailBand.detail.spotify? (<iframe title="canción"src="https://open.spotify.com/embed/track/0bVtevEgtDIeRjCJbK3Lmv?utm_source=generator" width="30%" height="380" 
+    <h1>
+    {detailBand.detail.spotify? (<iframe title="canción"src="https://open.spotify.com/embed/track/0bVtevEgtDIeRjCJbK3Lmv?utm_source=generator" width="100%" height="380" 
     frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>) : ""}
+    </h1>
     <button onClick={handleCancelDetail}>Atrás</button>
     </div>
     )
