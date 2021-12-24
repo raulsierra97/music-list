@@ -4,8 +4,9 @@ const Bands = ({bands,newFilter}) => {
 return (
     <ul>
     {bands.map( (band,index) => 
+      /* Filtrado de lista a partir del buscador */
       (newFilter === "" || band.name.toUpperCase().includes(newFilter.toUpperCase()) ? 
-      <Band key={band.name} band={band}
+      <Band key={band.id} band={band}
       /> : "")
       ) } 
     </ul>

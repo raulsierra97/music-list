@@ -37,11 +37,38 @@
       }
     },
     {
-      "id": 5,
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11,
+      "name": "hrhrh",
+      "detail": {
+        "origin": "",
+        "yearsActive": "",
+        "spotify": ""
+      }
+    },
+    {
+      "id": 12,
       "name": "Queen",
       "detail": {
         "origin": "USA",
-        "yearsActive": "1970 - presente",
+        "yearsActive": "1950-2000",
         "spotify": ""
       }
     }
