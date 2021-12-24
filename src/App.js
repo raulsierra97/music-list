@@ -2,11 +2,12 @@ import './App.css';
 import React, { useEffect, useState } from 'react'
 import Bands from './components/bands/Bands'
 import { getAllBands } from './services/getAllBands'
-import Filter from './components/Filter';
+import Filter from './components/Filter'
 import BandForm from './components/BandForm'
-import EditedForm from './components/EditedForm';
-import { saveBand } from './services/saveBand';
-import { deleteBand } from './services/deleteBand';
+import EditedForm from './components/EditedForm'
+import { saveBand } from './services/saveBand'
+import { deleteBand } from './services/deleteBand'
+import Detail from './components/bands/Detail'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   const [displayAdd, setDisplayAdd] = useState(false)
   //Estado para indicar la banda que se quiere editar
   const [editedBandId, setEditedBandId] = useState(null)
+  const [detailBandId, setDetailBandId] = useState(null)
 
   useEffect(() => {
     getAllBands()
@@ -118,6 +120,13 @@ function App() {
     setEditedBandId(null)
   }
 
+  const handleDetail = (id) => {
+    return () => setDetailBandId(id)
+  }
+
+  const handleCancelDetail = () => {
+    setDetailBandId(null)
+  }
   
   return (
     <div>
@@ -167,10 +176,18 @@ function App() {
       </div>
       <Filter newFilter={newFilter} 
       handleChangeFilter={handleChangeFilter}/>
+      
+      { !detailBandId ? (
+      <div>
       <h2>Bandas</h2>
       <Bands bands={bands} newFilter={newFilter} 
-      handleDelete={handleDelete} handleEdit={handleEdit}
-      />    
+      handleDelete={handleDelete} handleEdit={handleEdit} 
+      handleDetail={handleDetail}
+      /> </div>  ):
+      <Detail detailBandId={detailBandId} bands={bands}
+      handleCancelDetail={handleCancelDetail}/>
+      }
+      
     </div>
     
   );

@@ -1,39 +1,30 @@
 {
   "bands": [
     {
-      "id": 1,
-      "name": "Guns N' Roses",
-      "detail": {
-        "origin": "Los Angeles, California, U.S.",
-        "yearsActive": "1985–present",
-        "spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Bon Jovi",
-      "detail": {
-        "Origin": "Los Angeles, California, U.S.",
-        "Years active": "1985–present",
-        "Spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
-      }
-    },
-    {
       "id": 3,
       "name": "U2",
       "detail": {
-        "Origin": "Los Angeles, California, U.S.",
-        "Years active": "1985–present",
-        "Spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+        "origin": "Los Angeles, California, U.S.",
+        "yearsActive": "1985–present",
+        "spotify": detailBand.detail.spotify
       }
     },
     {
       "id": 4,
-      "name": "Duran Duran",
+      "name": "Queen",
       "detail": {
-        "Origin": "Los Angeles, California, U.S.",
-        "Years active": "1985–present",
-        "Spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+        "origin": "",
+        "yearsActive": "",
+        "spotify": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "Bon Jova",
+      "detail": {
+        "origin": "",
+        "yearsActive": "",
+        "spotify": ""
       }
     }
   ]

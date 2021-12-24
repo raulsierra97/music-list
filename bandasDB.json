@@ -1,26 +1,26 @@
 {
   "bands": [
     {
-      "id": 2,
-      "name": "Bon Jovi",
-      "detail": {
-        "origin": "Los Angeles, California, U.S.",
-        "yearsActive": "1985–present",
-        "spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
-      }
-    },
-    {
       "id": 3,
       "name": "U2",
       "detail": {
         "origin": "Los Angeles, California, U.S.",
         "yearsActive": "1985–present",
-        "spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+        "spotify": "https://open.spotify.com/embed/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
       }
     },
     {
       "id": 4,
       "name": "Queen",
+      "detail": {
+        "origin": "",
+        "yearsActive": "",
+        "spotify": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "Bon Jova",
       "detail": {
         "origin": "",
         "yearsActive": "",
