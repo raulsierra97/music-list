@@ -35,15 +35,6 @@
         "Years active": "1985–present",
         "Spotify": "https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
       }
-    },
-    {
-      "id": 5,
-      "name": "Queen",
-      "detail": {
-        "origin": "USA",
-        "yearsActive": "1970 - presente",
-        "spotify": ""
-      }
     }
   ]
 }

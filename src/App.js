@@ -5,6 +5,7 @@ import { getAllBands } from './services/getAllBands'
 import Filter from './components/Filter';
 import BandForm from './components/BandForm'
 import { saveBand } from './services/saveBand';
+import { deleteBand } from './services/deleteBand';
 
 function App() {
   const [bands, setBands] = useState([]) 
@@ -13,6 +14,7 @@ function App() {
   const [newOrigin, setNewOrigin] = useState('')
   const [newYears, setNewYears] = useState('')
   const [newSpotify, setNewSpotify] = useState('')
+  //Estado para mostrar o no el formulario de añadir banda
   const [displayAdd, setDisplayAdd] = useState(false)
 
   useEffect(() => {
@@ -60,6 +62,18 @@ function App() {
     }
   }
 
+  const handleDelete = (id) => {
+    return () => {
+    try{
+    deleteBand(id)
+    }
+    catch (e){
+      window.alert(`${newName} ya se había borrado de la lista`)
+    }
+    }
+  }
+
+
   return (
     <div>
       <h1>Rock and Search</h1>
@@ -80,7 +94,7 @@ function App() {
       <Filter newFilter={newFilter} 
       handleChangeFilter={handleChangeFilter}/>
       <h2>Bandas</h2>
-      <Bands bands={bands} newFilter={newFilter}
+      <Bands bands={bands} newFilter={newFilter} handleDelete={handleDelete}
       />    
     </div>
     
