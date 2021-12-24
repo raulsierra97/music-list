@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const saveBand = (personaObj) => {
     return (axios
-    .post("http://localhost:3001/bands",personaObj)
+    .post("https://rock-and-search-default-rtdb.firebaseio.com/bands.json",personaObj)
     .then(({data})=> {
         return data}
         ) )
