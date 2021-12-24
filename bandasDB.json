@@ -1,0 +1,72 @@
+{
+  "bands":[
+    { 
+      "name": "Guns N' Roses", 
+      "detail": {
+		"Origin": "Los Angeles, California, U.S.",
+		"Years active" :"1985–present",
+		"Members" : [
+			"Axl Rose",
+			"Duff McKagan",
+			"Slash",
+			"Dizzy Reed",
+			"Richard Fortus",
+			"Frank Ferrer",
+			"Melissa Reese"
+			],
+		"Spotify":"https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+	  }
+    },
+	{ 
+      "name": "Bon Jovi", 
+     "detail": {
+		"Origin": "Los Angeles, California, U.S.",
+		"Years active" :"1985–present",
+		"Members" : [
+			"Axl Rose",
+			"Duff McKagan",
+			"Slash",
+			"Dizzy Reed",
+			"Richard Fortus",
+			"Frank Ferrer",
+			"Melissa Reese"
+			],
+		"Spotify":"https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+	  }
+    },
+	{ 
+      "name": "U2", 
+      "detail": {
+		"Origin": "Los Angeles, California, U.S.",
+		"Years active" :"1985–present",
+		"Members" : [
+			"Axl Rose",
+			"Duff McKagan",
+			"Slash",
+			"Dizzy Reed",
+			"Richard Fortus",
+			"Frank Ferrer",
+			"Melissa Reese"
+			],
+		"Spotify":"https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+	  }
+    },
+	{ 
+      "name": "Duran Duran", 
+      "detail": {
+		"Origin": "Los Angeles, California, U.S.",
+		"Years active" :"1985–present",
+		"Members" : [
+			"Axl Rose",
+			"Duff McKagan",
+			"Slash",
+			"Dizzy Reed",
+			"Richard Fortus",
+			"Frank Ferrer",
+			"Melissa Reese"
+			],
+		"Spotify":"https://open.spotify.com/album/3I9Z1nDCL4E0cP62flcbI5?si=4mNLi1RjT-2JgF9YiJSqzQ"
+	  }
+    }
+  ]
+}
