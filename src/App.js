@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     getAllBands()
       .then((data) => setBands(data))
-  })
+  }, [])
 
   const handleChangeFilter = (event) => 
   setNewFilter(event.target.value)
