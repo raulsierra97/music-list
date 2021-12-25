@@ -1,7 +1,8 @@
 import Band from './Band'
 
 const Bands = ({bands,newFilter, handleDelete, handleEdit,handleDetail}) => {
-return (
+  
+  return (
     <ul>
     {bands.map( (band,index) => 
       /* Filtrado de lista a partir del buscador */

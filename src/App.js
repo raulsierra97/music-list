@@ -45,11 +45,15 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault()
+    
     if (bands.find(band => band.name === newName) !== undefined) {
       window.alert(`${newName} ya estaba añadido en la lista`)
     }
+    
     else {
-      const id=Math.max(bands.map(band => band.id))
+      const id=Math.max(...bands.map(band => {
+        return band.id}))
+      debugger
       const bandaObj = {
         id: id+1,
         name: newName,
@@ -59,6 +63,7 @@ function App() {
           spotify: newSpotify
         }
       }
+      debugger
       const listaBandas = bands
       saveBand(bandaObj).then(() => setBands(listaBandas.concat(bandaObj)))
       setNewName("")
