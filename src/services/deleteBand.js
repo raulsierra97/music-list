@@ -14,4 +14,5 @@ export const deleteBand = (id) => {
     */
 }
 
-// Con la base de datos de Firebase no funciona
+// Con database local funcionaba pero con Firebase debo encontrar otra solución. 
+//  Para la URL ya no sirve el id creado por mi, sino el autoid de Firebase
