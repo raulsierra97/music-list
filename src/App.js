@@ -53,7 +53,7 @@ function App() {
     else {
       const id=Math.max(...bands.map(band => {
         return band.id}))
-      debugger
+      
       const bandaObj = {
         id: id+1,
         name: newName,
@@ -63,7 +63,7 @@ function App() {
           spotify: newSpotify
         }
       }
-      debugger
+      
       const listaBandas = bands
       saveBand(bandaObj).then(() => setBands(listaBandas.concat(bandaObj)))
       setNewName("")
