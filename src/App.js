@@ -25,7 +25,8 @@ function App() {
 
   useEffect(() => {
     getAllBands()
-      .then((data) => setBands(data))
+      .then((data) => setBands(Object.values(data)))
+    debugger
   }, [])
 
   const handleChangeFilter = (event) => 
