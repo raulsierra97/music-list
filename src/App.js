@@ -70,6 +70,7 @@ function App() {
       setNewOrigin("")
       setNewYears("")
       setNewSpotify("")
+      setDisplayAdd(false)
     }
   }
 
@@ -99,6 +100,7 @@ function App() {
       setNewOrigin("")
       setNewYears("")
       setNewSpotify("")
+      setDetailBandId(null)
     }
   }
 
