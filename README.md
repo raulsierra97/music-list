@@ -1,3 +1,7 @@
+# Music List
+
+React app made up of a list of music groups with various functions: add, edit, delete, search and view detailed info (with a embedded Spotify song).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
