@@ -1,9 +1,8 @@
 import axios from "axios"
 
 export const saveBand = (personaObj) => {
-    
     return (axios
-    .post("https://rock-and-search-default-rtdb.firebaseio.com/bands.json",personaObj)
+    .post("http://localhost:3001/bands",personaObj)
     .then(({data})=> {
         return data}
         ) )
